@@ -34,6 +34,9 @@ EditorBuildSettings:
     guid: 8fa25e3c6190d465dbd6c2d6f886b1e6
   - enabled: 1
     path: Assets/Scenes/left_5.unity
+    guid: e3bae89130175c34fa93130c1c2a17bc
+  - enabled: 1
+    path: Assets/Scenes/right_5.unity
     guid: 1bd1ae24e06344e39a9ed85dea7ea0fb
   - enabled: 1
     path: Assets/Scenes/right_1.unity
@@ -45,7 +48,7 @@ EditorBuildSettings:
     path: Assets/Scenes/left_7.unity
     guid: c87dd2b0e10f14259b8cc8867eab773e
   - enabled: 1
-    path: Assets/Scenes/left_8.unity
+    path: Assets/Scenes/right_8.unity
     guid: d9925a7fa477d4eafb149b713c4b4a84
   - enabled: 1
     path: Assets/Scenes/left_9.unity
@@ -53,4 +56,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/right_2.unity
     guid: 4cb207a7c3fe24ccea0f10ce9a63a648
+  - enabled: 1
+    path: Assets/Scenes/left_8.unity
+    guid: 641cf2778af676f41aa40736bf50fa4b
+  - enabled: 1
+    path: Assets/Scenes/right_3.unity
+    guid: 52698cdb7ab967e42bb2d62a43928919
+  - enabled: 1
+    path: Assets/Scenes/right_4.unity
+    guid: d327738128f67bf49a302136480a7ba7
+  - enabled: 1
+    path: Assets/Scenes/right_6.unity
+    guid: abc9d9f10b3f838458d7c254b6aab4bb
+  - enabled: 1
+    path: Assets/Scenes/right_7.unity
+    guid: 812873ccc27e2be459ada5881a420b5c
   m_configObjects: {}

@@ -44,7 +44,7 @@ public class nextLevel : MonoBehaviour
         {
             nextScene = "right_" + newNum;
         }
-        if (cur_name == "left_8" || cur_name == "right_2")
+        if (cur_name == "left_8" || cur_name == "right_8")
         {
             nextScene = "Start";
         }
