@@ -17,7 +17,7 @@ public class nextLevel : MonoBehaviour
 
     IEnumerator Music()
     { 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         once1 = true;
         once2 = true;
         SceneManager.LoadScene(nextScene);

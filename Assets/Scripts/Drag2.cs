@@ -12,7 +12,6 @@ public class Drag2 : MonoBehaviour
     private SpriteRenderer sprite;
     public GameObject level;
     public nextLevel script;
-    Scene m_Scene;
 
     private void Start()
     {
@@ -21,9 +20,8 @@ public class Drag2 : MonoBehaviour
         script = level.GetComponent<nextLevel>();
     }
 
-    void OnMouseDown()   //void OnMouseOver()
+    void OnMouseDown()	//void OnMouseOver()
     {
-
         offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
     }
 
@@ -44,7 +42,6 @@ public class Drag2 : MonoBehaviour
     {
         float y = EmptyCircle.gameObject.GetComponent<Rigidbody2D>().position.y;
         float x = EmptyCircle.gameObject.GetComponent<Rigidbody2D>().position.x;
-
         if (EmptyCircle.gameObject.tag == "EmptyCircle")
         {
             canMove = false;

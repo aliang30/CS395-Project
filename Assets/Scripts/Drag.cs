@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(BoxCollider2D))]
 
@@ -19,8 +20,7 @@ public class Drag : MonoBehaviour
         script = level.GetComponent<nextLevel>();
     }
 
-    void OnMouseDown()
-    //void OnMouseOver()
+    void OnMouseDown() 	//void OnMouseOver()
     { 
         offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
     }
