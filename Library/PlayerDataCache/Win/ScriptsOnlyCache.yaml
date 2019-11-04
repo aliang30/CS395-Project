@@ -1,12 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ButtonSound
     - Drag
     - Drag2
     - Drag3
     - Empty
     - LeftStart
     - MainMenu
+    - Mute
     - Quit
     - RightStart
     - emptyMove
@@ -63,6 +65,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -101,6 +107,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11514}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
+    - Class: 114
+      Script: {instanceID: 109242}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -172,6 +182,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -239,6 +251,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -304,6 +318,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -371,6 +387,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -436,6 +454,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -501,6 +521,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -572,6 +594,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -637,6 +661,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -710,6 +736,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -725,47 +753,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/left_9.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 50
-      Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9854}
-    - Class: 114
-      Script: {instanceID: 10738}
-    - Class: 114
-      Script: {instanceID: 11520}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
       Script: {instanceID: 0}
     Assets/Scenes/right example.unity:
     - Class: 1
@@ -841,6 +828,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -906,6 +895,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -971,6 +962,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1038,6 +1031,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1103,6 +1098,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1168,6 +1165,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1239,6 +1238,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1304,6 +1305,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1377,6 +1380,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11874}
     - Class: 114
       Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 17294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2036,6 +2041,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 01db38ed4878be93f8783ac323772da7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Mute
+  - hash:
+      serializedVersion: 2
+      Hash: 738c23b7b3b2a8414d48e37a088fd920
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonSound
   platform: 5
   scenePathNames:
   - Assets/Scenes/Start.unity
@@ -2052,7 +2069,6 @@ ScriptsOnlyBuild:
   - Assets/Scenes/right_0.unity
   - Assets/Scenes/left_7.unity
   - Assets/Scenes/right_8.unity
-  - Assets/Scenes/left_9.unity
   - Assets/Scenes/right_2.unity
   - Assets/Scenes/left_8.unity
   - Assets/Scenes/right_3.unity

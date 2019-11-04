@@ -50,7 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/right_8.unity
     guid: d9925a7fa477d4eafb149b713c4b4a84
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/left_9.unity
     guid: f532b9ac2ec8f4d00aa019e2eb680a88
   - enabled: 1
