@@ -36,18 +36,28 @@ public class nextLevel : MonoBehaviour
         int newScene = sceneNum + 1;
         //Debug.Log(newScene);
         string newNum = newScene.ToString();
-        if(cur_name[0] == 'l')
+		
+		//if first letter begins with a 'l'
+        if (cur_name[0] == 'l')
         {
             nextScene = "left_" + newNum;
         }
-        else
+		
+		//if first letter begins with a 'r'
+        else if (cur_name[0] == 'm')
         {
-            nextScene = "right_" + newNum;
+            nextScene = "middle_" + newNum;
         }
-        if (cur_name == "left_8" || cur_name == "right_8")
+		else 
+		{
+			nextScene = "right_" + newNum;
+		}
+		
+        if ((cur_name == "middle_8") || (cur_name == "left_8") || (cur_name == "right_8"))
         {
             nextScene = "Start";
         }
+		
         counter = 0;
         audio = GetComponent<AudioSource>();
         once1 = true;

@@ -54,4 +54,5 @@ public class Drag2 : MonoBehaviour
             canMove = true;
         }
     }
+		
 }

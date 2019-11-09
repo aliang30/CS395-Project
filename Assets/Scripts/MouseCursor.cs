@@ -2,25 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseCursor : MonoBehaviour {
-	Vector2 sensitivity = new Vector2(0.5f, 0.5f);
+public class MouseCursor : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        Cursor.visible = false;
+        Screen.lockCursor = true;
+        Screen.lockCursor = false;
+    }
 
-	
-	// Use this for initialization
-	void Start () {
-		//Hide real cursor
-		Cursor.visible = false;
-		Cursor.lockState = CursorLockMode.Confined;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		//Create our Cursor
-		
-		Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		/*Vector2 mouseMovement = new Vector2(Input.GetAxisRaw("Mouse X") * sensitivity.x,
-                                    Input.GetAxisRaw("Mouse Y") * sensitivity.y);*/
-		transform.position = cursorPos;
-		
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        //Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //transform.position = cursorPos;
+        Vector2 sensitivity = new Vector2(.005f, .005f);
+        //Vector2 mouseMovement = new Vector2(Input.GetAxisRaw("Mouse X") * sensitivity.x, Input.GetAxisRaw("Mouse Y") * sensitivity.y);
+        Vector2 mouseMovement = new Vector2(Input.GetAxisRaw("Mouse X") * sensitivity.x, Input.GetAxisRaw("Mouse Y")*sensitivity.y);
+        //console.log(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
+        //Debug.Log(mouseMovement);
+        transform.Translate(mouseMovement.x,mouseMovement.y, 0, Space.Self);
+    }
 }
