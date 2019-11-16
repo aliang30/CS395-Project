@@ -1,2 +1,4 @@
-# tw-project
-Pick and place levels of project
+CS395 internship project
+
+Stroke Rehab game made with Unity
+
