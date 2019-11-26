@@ -34,7 +34,7 @@ public class Drag : MonoBehaviour
             Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
             //Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
             //transform.position = curPosition;
-			Vector2 sensitivity = new Vector2(.005f, .005f);
+			Vector2 sensitivity = new Vector2(.002f, .002f);
 			Vector2 mouseMovement = new Vector2(Input.GetAxisRaw("Mouse X") * sensitivity.x, Input.GetAxisRaw("Mouse Y")*sensitivity.y);
 			transform.Translate(mouseMovement.x,mouseMovement.y, 0, Space.Self);
             sprite.sortingOrder = 4;
