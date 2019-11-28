@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
+using System.Text.RegularExpressions;
 
 public class nextLevel : MonoBehaviour
 {
@@ -25,16 +26,14 @@ public class nextLevel : MonoBehaviour
 
     void Start()
     {
-        //total = 1;
+
         total = GameObject.FindGameObjectsWithTag("Circle").Length + GameObject.FindGameObjectsWithTag("Square").Length + GameObject.FindGameObjectsWithTag("Rect").Length +
-         GameObject.FindGameObjectsWithTag("Green").Length + GameObject.FindGameObjectsWithTag("Yellow").Length + GameObject.FindGameObjectsWithTag("Red").Length;
+        GameObject.FindGameObjectsWithTag("Green").Length + GameObject.FindGameObjectsWithTag("Yellow").Length + GameObject.FindGameObjectsWithTag("Red").Length;
         m_Scene = SceneManager.GetActiveScene();
         string cur_name = m_Scene.name;
-        string num = cur_name.Substring(cur_name.Length - 1, 1);
+        string num = Regex.Match(cur_name, @"\d+").Value;
         Int32.TryParse(num, out int sceneNum);
-        //Debug.Log(sceneNum);
         int newScene = sceneNum + 1;
-        //Debug.Log(newScene);
         string newNum = newScene.ToString();
 		
 		//if first letter begins with a 'l'
@@ -53,7 +52,7 @@ public class nextLevel : MonoBehaviour
 			nextScene = "right_" + newNum;
 		}
 		
-        if ((cur_name == "middle_8") || (cur_name == "left_8") || (cur_name == "right_8"))
+        if ((cur_name == "middle_20") || (cur_name == "left_20") || (cur_name == "right_20"))
         {
             nextScene = "Start";
         }
@@ -78,6 +77,12 @@ public class nextLevel : MonoBehaviour
             audio.UnPause();
             StartCoroutine(Music());
         }
+        ////DEBUG
+        //Level Skip Cheat
+        if (Input.GetKeyDown("space")) {
+            SceneManager.LoadScene(nextScene);
+        }
+        ////
     }
 
     public void startClock()
